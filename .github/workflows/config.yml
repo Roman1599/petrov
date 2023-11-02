@@ -6,18 +6,12 @@ on:
       deployment_target:
         description: Choose target
         required: true
-        default: second_test
+        default:
         type: choice
         options:
           - first_test
           - second_test
           - all
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 
 
   test:
@@ -39,20 +33,8 @@ permissions:
         uses: actions/download-artifact@v3
       - name: first_test
         if: "github.event.inputs.deployment_target == 'first_test'"
-        run: pytest tests\feature_profile_test.py --alluredir=allure-results
+        run: pytest tests\feature_profile_test.py
         continue-on-error: true
       - name: second_test
         if: "github.event.inputs.deployment_target == 'second_test'"
-        run: pytest tests\feature_profile_test.py --alluredir=allure-results
-        continue-on-error: true
-      - name: all
-        if: "github.event.inputs.deployment_target == 'all'"
-        run: pytest --alluredir=allure-results
-        continue-on-error: true
-      - name: Store allure results
-        uses: actions/upload-artifact@v3
-        with:
-          name: allure-results
-          path:
-            allure-results
-          retention-days: 1
+        run: pytest
