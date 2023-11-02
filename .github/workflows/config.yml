@@ -18,7 +18,7 @@ on:
 #  pages: write
 #  id-token: write
 #
-#jobs:
+jobs:
 #  download-history:
 #    # if: false
 #    runs-on: ubuntu-latest
