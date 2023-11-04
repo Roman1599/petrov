@@ -17,10 +17,10 @@ class BasePage:
         with allure.step(f"Open {self.PAGE_URL} is opened"):
             self.wait.until(EC.url_to_be(self.PAGE_URL))
 
-    # def make_screen(self,screen_name):
-    #     allure.attach(
-    #         body=self.driver.get_attac,
-    #         name=screen_name,
-    #         attachment_type=AttachmentType.PNG
-    #     )
+    def make_screen(self,screen_name):
+        allure.attach(
+            body=self.driver.get_screenshot_as_png(),
+            name=screen_name,
+            attachment_type=AttachmentType.PNG
+        )
 
