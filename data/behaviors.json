@@ -1,1 +1,22 @@
-{"uid":"b1a8273437954620fa374b796ffaacdd","name":"behaviors","children":[]}
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Profile Functionaloty",
+    "children" : [ {
+      "name" : "change profile name",
+      "uid" : "bb5fda4585e99b93",
+      "parentUid" : "736c062ff83fb0dd698e00237a0718e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1699097456627,
+        "stop" : 1699097467992,
+        "duration" : 11365
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "736c062ff83fb0dd698e00237a0718e6"
+  } ],
+  "name" : "behaviors"
+}
