@@ -51,5 +51,20 @@ class TestProfileFeature(BaseTest):
         self.buzz_page.click_post_btn()
         self.personal_page.make_screen("Post success")
 
+    @allure.title("Search assistant")
+    @allure.severity("Critical")
+    def test_search_assistant(self):
+        self.login_page.open()
+        self.login_page.enter_login(self.data.LOGIN)
+        self.login_page.enter_password(self.data.PASSWORD)
+        self.login_page.click_submit_button()
+        self.dashboard_page.is_opened()
+        self.dashboard_page.click_directory()
+        self.directory_page.is_opened()
+        self.directory_page.add_field_employee(f"Test text {random.randint(1, 100)}")
+        self.directory_page.choose_params_employee()
+        self.directory_page.click_search_btn()
+        self.personal_page.make_screen("Search success")
+
 
 
