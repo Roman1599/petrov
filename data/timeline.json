@@ -1,52 +1,52 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "fa8c72fbc129",
+    "name" : "f41c94c8b7b0",
     "children" : [ {
       "name" : "1-MainThread",
       "children" : [ {
+        "name" : "Post random information",
+        "uid" : "f11aa7a98b214b55",
+        "parentUid" : "f484c972fec027a034e7c53888b05a55",
+        "status" : "passed",
+        "time" : {
+          "start" : 1699177223526,
+          "stop" : 1699177229911,
+          "duration" : 6385
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Click on sections Most",
+        "uid" : "d667539bd8d54bd0",
+        "parentUid" : "f484c972fec027a034e7c53888b05a55",
+        "status" : "passed",
+        "time" : {
+          "start" : 1699177215569,
+          "stop" : 1699177222621,
+          "duration" : 7052
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
         "name" : "change profile name",
-        "uid" : "5b7fa1883a2d9046",
-        "parentUid" : "774e8a6e94f1ae825be6e5c7f927041e",
-        "status" : "broken",
+        "uid" : "9263973b26c448c6",
+        "parentUid" : "f484c972fec027a034e7c53888b05a55",
+        "status" : "passed",
         "time" : {
-          "start" : 1699176733386,
-          "stop" : 1699176733386,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Click on sections Most",
-        "uid" : "abd163aa91b6e6ef",
-        "parentUid" : "774e8a6e94f1ae825be6e5c7f927041e",
-        "status" : "broken",
-        "time" : {
-          "start" : 1699176734311,
-          "stop" : 1699176734311,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Click on sections Most",
-        "uid" : "de2ebfe7b54e7460",
-        "parentUid" : "774e8a6e94f1ae825be6e5c7f927041e",
-        "status" : "broken",
-        "time" : {
-          "start" : 1699176735122,
-          "stop" : 1699176735122,
-          "duration" : 0
+          "start" : 1699177203787,
+          "stop" : 1699177214631,
+          "duration" : 10844
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "774e8a6e94f1ae825be6e5c7f927041e"
+      "uid" : "f484c972fec027a034e7c53888b05a55"
     } ],
-    "uid" : "048fe5cffee40841be098e08c186a88d"
+    "uid" : "569b3c92b10cd7aabd9767811a4654e0"
   } ],
   "name" : "timeline"
 }

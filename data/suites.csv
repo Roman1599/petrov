@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Sun Nov 05 09:32:15 GMT 2023","Sun Nov 05 09:32:15 GMT 2023","0","tests","feature_profile_test","TestProfileFeature","","","Click on sections Most",""
-"broken","Sun Nov 05 09:32:13 GMT 2023","Sun Nov 05 09:32:13 GMT 2023","0","tests","feature_profile_test","TestProfileFeature","","","change profile name",""
-"broken","Sun Nov 05 09:32:14 GMT 2023","Sun Nov 05 09:32:14 GMT 2023","0","tests","feature_profile_test","TestProfileFeature","","","Click on sections Most",""
+"passed","Sun Nov 05 09:40:15 GMT 2023","Sun Nov 05 09:40:22 GMT 2023","7052","tests","feature_profile_test","TestProfileFeature","","","Click on sections Most",""
+"passed","Sun Nov 05 09:40:03 GMT 2023","Sun Nov 05 09:40:14 GMT 2023","10844","tests","feature_profile_test","TestProfileFeature","","","change profile name",""
+"passed","Sun Nov 05 09:40:23 GMT 2023","Sun Nov 05 09:40:29 GMT 2023","6385","tests","feature_profile_test","TestProfileFeature","","","Post random information",""

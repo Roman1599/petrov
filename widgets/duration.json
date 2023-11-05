@@ -1,31 +1,31 @@
 [ {
-  "uid" : "de2ebfe7b54e7460",
+  "uid" : "d667539bd8d54bd0",
   "name" : "Click on sections Most",
   "time" : {
-    "start" : 1699176735122,
-    "stop" : 1699176735122,
-    "duration" : 0
+    "start" : 1699177215569,
+    "stop" : 1699177222621,
+    "duration" : 7052
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "5b7fa1883a2d9046",
+  "uid" : "9263973b26c448c6",
   "name" : "change profile name",
   "time" : {
-    "start" : 1699176733386,
-    "stop" : 1699176733386,
-    "duration" : 0
+    "start" : 1699177203787,
+    "stop" : 1699177214631,
+    "duration" : 10844
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "abd163aa91b6e6ef",
-  "name" : "Click on sections Most",
+  "uid" : "f11aa7a98b214b55",
+  "name" : "Post random information",
   "time" : {
-    "start" : 1699176734311,
-    "stop" : 1699176734311,
-    "duration" : 0
+    "start" : 1699177223526,
+    "stop" : 1699177229911,
+    "duration" : 6385
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "critical"
 } ]
