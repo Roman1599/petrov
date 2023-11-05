@@ -4,13 +4,39 @@
     "name" : "Profile Functionaloty",
     "children" : [ {
       "name" : "change profile name",
-      "uid" : "9bde958b0826e207",
+      "uid" : "1b80da228259e570",
       "parentUid" : "736c062ff83fb0dd698e00237a0718e6",
-      "status" : "passed",
+      "status" : "broken",
       "time" : {
-        "start" : 1699102679924,
-        "stop" : 1699102689991,
-        "duration" : 10067
+        "start" : 1699176468275,
+        "stop" : 1699176468275,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Click on sections Most",
+      "uid" : "e4e4b4140c76323e",
+      "parentUid" : "736c062ff83fb0dd698e00237a0718e6",
+      "status" : "broken",
+      "time" : {
+        "start" : 1699176469232,
+        "stop" : 1699176469232,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Click on sections Most",
+      "uid" : "668293a8cfea8028",
+      "parentUid" : "736c062ff83fb0dd698e00237a0718e6",
+      "status" : "broken",
+      "time" : {
+        "start" : 1699176470054,
+        "stop" : 1699176470054,
+        "duration" : 0
       },
       "flaky" : false,
       "newFailed" : false,

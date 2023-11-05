@@ -1,5 +1,52 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "children" : [ {
+        "name" : "change profile name",
+        "uid" : "1b80da228259e570",
+        "parentUid" : "6a28f92c5c8a4cadb904435561a27c65",
+        "status" : "broken",
+        "time" : {
+          "start" : 1699176468275,
+          "stop" : 1699176468275,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Click on sections Most",
+        "uid" : "e4e4b4140c76323e",
+        "parentUid" : "6a28f92c5c8a4cadb904435561a27c65",
+        "status" : "broken",
+        "time" : {
+          "start" : 1699176469232,
+          "stop" : 1699176469232,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Click on sections Most",
+        "uid" : "668293a8cfea8028",
+        "parentUid" : "6a28f92c5c8a4cadb904435561a27c65",
+        "status" : "broken",
+        "time" : {
+          "start" : 1699176470054,
+          "stop" : 1699176470054,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6a28f92c5c8a4cadb904435561a27c65"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }
