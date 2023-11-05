@@ -37,7 +37,7 @@ class TestProfileFeature(BaseTest):
         self.buzz_page.is_opened()
         self.buzz_page.click_most()
 
-    @allure.title("Click on sections Most")
+    @allure.title("Post random information")
     @allure.severity("Critical")
     def test_post(self):
         self.login_page.open()
