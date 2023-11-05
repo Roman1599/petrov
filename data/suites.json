@@ -8,12 +8,12 @@
         "name" : "TestProfileFeature",
         "children" : [ {
           "name" : "change profile name",
-          "uid" : "1b80da228259e570",
+          "uid" : "5b7fa1883a2d9046",
           "parentUid" : "ecec602510fca8558358a9e53be22b2c",
           "status" : "broken",
           "time" : {
-            "start" : 1699176468275,
-            "stop" : 1699176468275,
+            "start" : 1699176733386,
+            "stop" : 1699176733386,
             "duration" : 0
           },
           "flaky" : false,
@@ -21,12 +21,12 @@
           "parameters" : [ ]
         }, {
           "name" : "Click on sections Most",
-          "uid" : "e4e4b4140c76323e",
+          "uid" : "abd163aa91b6e6ef",
           "parentUid" : "ecec602510fca8558358a9e53be22b2c",
           "status" : "broken",
           "time" : {
-            "start" : 1699176469232,
-            "stop" : 1699176469232,
+            "start" : 1699176734311,
+            "stop" : 1699176734311,
             "duration" : 0
           },
           "flaky" : false,
@@ -34,12 +34,12 @@
           "parameters" : [ ]
         }, {
           "name" : "Click on sections Most",
-          "uid" : "668293a8cfea8028",
+          "uid" : "de2ebfe7b54e7460",
           "parentUid" : "ecec602510fca8558358a9e53be22b2c",
           "status" : "broken",
           "time" : {
-            "start" : 1699176470054,
-            "stop" : 1699176470054,
+            "start" : 1699176735122,
+            "stop" : 1699176735122,
             "duration" : 0
           },
           "flaky" : false,
