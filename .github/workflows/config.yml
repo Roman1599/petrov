@@ -1,6 +1,8 @@
 name: UI Tests
 
-on: workflow_dispatch
+on:
+  schedule:
+    -cron: '*/15 * * * *'
 
 jobs:
   create_issue:
