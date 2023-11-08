@@ -1,4 +1,6 @@
 import random
+import time
+
 import allure
 import pytest
 from base.base_test import BaseTest
@@ -51,6 +53,24 @@ class TestProfileFeature(BaseTest):
         self.buzz_page.click_post_btn()
         self.personal_page.make_screen("Post success")
 
+
+    @allure.title("Add employee")
+    @allure.severity("Critical")
+    def test_add_employee(self):
+        self.login_page.open()
+        self.login_page.enter_login(self.data.LOGIN)
+        self.login_page.enter_password(self.data.PASSWORD)
+        self.login_page.click_submit_button()
+        self.dashboard_page.is_opened()
+        self.dashboard_page.click_pim()
+        self.pim_page.is_opened()
+        self.pim_page.click_add_emloyee()
+        self.pim_page.fill_fields("Luis","Suarez")
+        time.sleep(3)
+        self.pim_page.click_save_btn()
+        self.pim_page.make_screen("Add employee success")
+
+
     @allure.title("Search assistant")
     @allure.severity("Critical")
     def test_search_assistant(self):
@@ -61,10 +81,6 @@ class TestProfileFeature(BaseTest):
         self.dashboard_page.is_opened()
         self.dashboard_page.click_directory()
         self.directory_page.is_opened()
-        self.directory_page.add_field_employee(f"Test text {random.randint(1, 100)}")
-        self.directory_page.choose_params_employee()
+        self.directory_page.add_field_employee(f"Luis")
         self.directory_page.click_search_btn()
         self.personal_page.make_screen("Search success")
-
-
-

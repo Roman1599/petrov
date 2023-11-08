@@ -4,7 +4,7 @@ from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
 import allure
 import time
-from selenium.webdriver import Keys
+
 
 class BuzzPage(BasePage):
 

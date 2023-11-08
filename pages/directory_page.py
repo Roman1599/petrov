@@ -1,3 +1,5 @@
+from selenium.webdriver.common.by import By
+
 from base.base_page import BasePage
 
 from config.links import Links
@@ -8,14 +10,15 @@ from selenium.webdriver import Keys
 
 class DirectoryPage(BasePage):
 
-    PAGE_URL = Links.BUZZ_PAGE
+    PAGE_URL = Links.DIRECTORY_PAGE
 
     EMPLOYEE_NAME = ("xpath","//*[@placeholder='Type for hints...']")
+    FIRST_NAME = ("xpath","//span[text()='Luis  Suarez']")
     JOB_TITLE = ("xpath","(//*[@class='oxd-select-text--after'])[1]")
-    JOB_ASSISTANT = ("xpath", "//div[@class='oxd-select-option --selected']")
+    JOB_ASSISTANT = ("xpath", "//span[text()='QA QC Engineer1275']")
     LOCATION = ("xpath", "(//*[@class='oxd-select-text--after'])[2]")
-    CANADIAN_LOC = ("xpath", "//span[text()='Canadian Regional HQ']")
-    SEARCH_BTN = ("xpath", "//*[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space']")
+    CANADIAN_LOC = ("xpath", "//span[text()='Home']")
+    SEARCH_BTN = ("xpath", "//*[text()=' Search ']")
 
 
     @allure.step("Add fields")
@@ -23,17 +26,9 @@ class DirectoryPage(BasePage):
         employee_field = self.wait.until(EC.element_to_be_clickable(self.EMPLOYEE_NAME))
         employee_field.send_keys(new_employee)
         self.value = new_employee
-
-    @allure.step("Add fields")
-    def choose_params_employee(self):
-        self.wait.until(EC.element_to_be_clickable(self.JOB_TITLE)).click()
-        self.wait.until(EC.element_to_be_clickable(self.JOB_ASSISTANT)).click()
-        self.wait.until(EC.element_to_be_clickable(self.LOCATION)).click()
-        self.wait.until(EC.element_to_be_clickable(self.CANADIAN_LOC)).click()
-
+        self.wait.until(EC.element_to_be_clickable(self.FIRST_NAME)).click()
 
 
     @allure.step("Click on Post button")
     def click_search_btn(self):
         self.wait.until(EC.element_to_be_clickable(self.SEARCH_BTN)).click()
-

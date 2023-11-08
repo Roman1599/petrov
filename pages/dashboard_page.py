@@ -10,6 +10,7 @@ class DashboardPage(BasePage):
     MY_INFO_BUTTON = ("xpath","//span[text()='My Info']")
     BUZZ_BUTTON = ("xpath", "//span[text()='Buzz']")
     DIRECTORY_BUTTON = ("xpath", "//span[text()='Directory']")
+    PIM_BUTTON = ("xpath", "//span[text()='PIM']")
 
     @allure.step("Click on 'My info' link" )
     def click_my_info(self):
@@ -22,3 +23,7 @@ class DashboardPage(BasePage):
     @allure.step("Click on 'Directory' link")
     def click_directory(self):
         self.wait.until(EC.element_to_be_clickable(self.DIRECTORY_BUTTON)).click()
+
+    @allure.step("Click on 'Pim' link")
+    def click_pim(self):
+        self.wait.until(EC.element_to_be_clickable(self.PIM_BUTTON)).click()
