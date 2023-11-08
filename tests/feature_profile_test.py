@@ -66,7 +66,6 @@ class TestProfileFeature(BaseTest):
         self.pim_page.is_opened()
         self.pim_page.click_add_emloyee()
         self.pim_page.fill_fields("Luis","Suarez")
-        time.sleep(3)
         self.pim_page.click_save_btn()
         self.pim_page.make_screen("Add employee success")
 
